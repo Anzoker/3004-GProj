@@ -8,7 +8,7 @@ int main(int argc, char **argv)
 
  // Create a container window
  QWidget window;
- window.setFixedSize(600, 600);
+ window.setFixedSize(500, 500);
 
  // Create a progress bar
  // with the range between 0 and 100, and a starting value of 0
