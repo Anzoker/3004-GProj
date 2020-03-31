@@ -27,4 +27,4 @@ signals:
     void valueChanged(int newValue);
 };
 
-#endif // SCREENING_CONFIRM_H
+#endif // PROGRAM_CONFIRM_H
