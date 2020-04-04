@@ -207,7 +207,7 @@ void Program::handler(int s) {
     }
 }
 
-// Executing the program.
+// Beginning treatment.
 void Program::program_test() {
     program_length test;
     test.setModal(true); // Window state.
@@ -218,7 +218,7 @@ void Program::program_test() {
     connect(counter, SIGNAL(timeout()), this, SLOT(cnt()));
     ui->progress->setRange(0, length);
     
-    // Beginning treatment.
+    // Simulating frequency.
     QString pwr;
     if(pwr_usage == 1){
         pwr = " 10Hz ";
