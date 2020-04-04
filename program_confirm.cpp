@@ -1,7 +1,7 @@
 #include "program_confirm.h"
 #include "ui_program_confirm.h"
 
-program_confirm::program_confirm(QWidget *parent) :
+program_confirm::program_confirm(QWidget *parent):
     QDialog(parent),
     ui(new Ui::program_confirm)
 {
@@ -13,20 +13,21 @@ program_confirm::~program_confirm()
     delete ui;
 }
 
-void program_confirm::on_pushButton_2_clicked()
+void program_confirm::on_pushButton_2_clicked() // Button for "no".
 {
-    emit valueChanged(0);
+    emit valueChanged(0); // A slot listens for this signal. When "program" restarts it 
     close();
 }
 
 void program_confirm::on_yes_clicked()
 {
-    emit valueChanged(1);
+    emit valueChanged(1); // A slot listens for this signal.
     close();
 }
 
-void program_confirm::setText(int s){
-    if (s == 1){
+// Text displayed to user, dependent on which of the eight programs is selected.
+void program_confirm::setText(int s) {
+    if (s == 1) {
         ui->label->setText("Place the sensors on the \naffected area.\nAre the sensors properly attached?");
     } else if (s == 2) {
         ui->label->setText("Place the sensors near the area that \nis currently painful.\nAre the sensors properly attached?");
