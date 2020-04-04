@@ -4,14 +4,10 @@
 Program_Confirm::Program_Confirm(QWidget *parent):
     QDialog(parent),
     ui(new Ui::Program_Confirm)
-{
-    ui->setupUi(this);
-}
 
-Program_Confirm::~Program_Confirm()
-{
-    delete ui;
-}
+{ ui->setupUi(this); }
+
+Program_Confirm::~Program_Confirm() { delete ui; }
 
 void Program_Confirm::on_pushButton_2_clicked() // Button for "no".
 {
