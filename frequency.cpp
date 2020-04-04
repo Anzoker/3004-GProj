@@ -48,7 +48,6 @@ Frequency::Frequency(QWidget *parent) :
     ui->battery_lvl->show();
     ui->menu->show();
     ui->clock->show();
-
 }
 
 Frequency::~Frequency() { delete ui; }
