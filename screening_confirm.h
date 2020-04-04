@@ -3,9 +3,7 @@
 
 #include <QDialog>
 
-namespace Ui {
-class screening_confirm;
-}
+namespace Ui { class screening_confirm; }
 
 class screening_confirm : public QDialog
 {
@@ -16,8 +14,7 @@ public:
     ~screening_confirm();
 
 private slots:
-    void on_pushButton_2_clicked();
-
+    void on_pushButton_2_clicked(); // Button for "no".
     void on_yes_clicked();
 
 private:
