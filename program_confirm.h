@@ -4,16 +4,16 @@
 #include <QDialog>
 
 namespace Ui {
-class Program_Confirm;
+class program_confirm;
 }
 
-class Program_Confirm : public QDialog
+class program_confirm : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit Program_Confirm(QWidget *parent = nullptr);
-    ~Program_Confirm();
+    explicit program_confirm(QWidget *parent = nullptr);
+    ~program_confirm();
     void setText(int s); // Displays text to user after a program is selected.
 
 private slots:
@@ -21,7 +21,7 @@ private slots:
     void on_yes_clicked();
 
 private:
-    Ui::Program_Confirm *ui;
+    Ui::program_confirm *ui;
 
 signals:
     void valueChanged(int newValue); // "Program" checks for the value emitted by this signal.
