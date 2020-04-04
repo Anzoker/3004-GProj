@@ -12,7 +12,6 @@ class Program : public QDialog
 public:
     explicit Program(QWidget *parent = nullptr);
     ~Program();
-    
     // For simulating power consumption.
     int getRand(int min, int max); 
     int batteryStatus();
