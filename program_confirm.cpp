@@ -15,13 +15,13 @@ program_confirm::~program_confirm()
 
 void program_confirm::on_pushButton_2_clicked() // Button for "no".
 {
-    emit valueChanged(0); // A slot listens for this signal. When "program" restarts it 
+    emit valueChanged(0); // When program.cpp restarts it checks for this signal value.
     close();
 }
 
 void program_confirm::on_yes_clicked()
 {
-    emit valueChanged(1); // A slot listens for this signal.
+    emit valueChanged(1); // When program.cpp restarts it checks for this signal value.
     close();
 }
 
