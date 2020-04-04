@@ -77,12 +77,13 @@ int Program::batteryStatus() {
     }
 }
 
+// For simulating power consumption.
 void Program::batteryHandler() {
     battery_cntr += 1;
-    if (battery_cntr > (40 + getRand(-10, 10))) { // Simulating power consumption.
+    if (battery_cntr > (40 + getRand(-10, 10))) { // Simulating battery drain.
         battery_cntr = 0;
         battery -= 1;
-        ui->battery_lvl->valueChanged(battery); // Sets value.
+        ui->battery_lvl->valueChanged(battery); // Setting value.
         if (battery <= 0) {
             on_off_button_clicked();
         } else if (battery < 15) { // Displaying battery charge visual indicator.
