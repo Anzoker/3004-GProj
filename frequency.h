@@ -24,7 +24,7 @@ public slots:
 
 private slots:
     void on_battery_lvl_valueChanged(int value); // For simulating power consumption.
-    // UI
+    // UI.
     void on_off_button_clicked();
     void enabler();
     void on_return_2_clicked();
