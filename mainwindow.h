@@ -24,25 +24,20 @@ public:
     void batteryHandler();
 
 public slots:
+    void init();
     void time();
+    // For simulating power consumption.
     void setBattery(int b, int cntr);
     void setPwr(int p);
-    void init();
 
 private slots:
-
-    void on_battery_lvl_valueChanged(int value);
-
+    void on_battery_lvl_valueChanged(int value); // For simulating power consumption.
+    // UI.
     void on_off_button_clicked();
-
     void on_on_button_clicked();
-
     void on_program_clicked();
-
     void on_frequency_clicked();
-
     void on_screening_clicked();
-
     void on_settings_clicked();
 
 private:
@@ -51,10 +46,12 @@ private:
     Program  *prog;
     Frequency *freq;
     Screening *screen;
+    bool status = false;
+    // For simulating power consumption.
     int battery = 100;
     int battery_cntr = 0;
     int pwr_usage = 0;
-    bool status = false;
     QTimer *timer;
 };
+
 #endif // MAINWINDOW_H
