@@ -1,32 +1,32 @@
 #include "program_confirm.h"
 #include "ui_program_confirm.h"
 
-program_confirm::program_confirm(QWidget *parent):
+Program_Confirm::Program_Confirm(QWidget *parent):
     QDialog(parent),
-    ui(new Ui::program_confirm)
+    ui(new Ui::Program_Confirm)
 {
     ui->setupUi(this);
 }
 
-program_confirm::~program_confirm()
+Program_Confirm::~Program_Confirm()
 {
     delete ui;
 }
 
-void program_confirm::on_pushButton_2_clicked() // Button for "no".
+void Program_Confirm::on_pushButton_2_clicked() // Button for "no".
 {
-    emit valueChanged(0); // When program.cpp restarts it checks for this signal value.
+    emit valueChanged(0); // When "Program" restarts it checks for this signal value.
     close();
 }
 
-void program_confirm::on_yes_clicked()
+void Program_Confirm::on_yes_clicked()
 {
-    emit valueChanged(1); // When program.cpp restarts it checks for this signal value.
+    emit valueChanged(1); // When "Program" restarts it checks for this signal value.
     close();
 }
 
 // Text displayed to user, dependent on which of the eight programs is selected.
-void program_confirm::setText(int s) {
+void Program_Confirm::setText(int s) {
     if (s == 1) {
         ui->label->setText("Place the sensors on the \naffected area.\nAre the sensors properly attached?");
     } else if (s == 2) {
