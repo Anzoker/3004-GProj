@@ -191,7 +191,7 @@ void Screening::cnt() {
         ui->menu2->hide();
         ui->menu->show();
         ui->return_2->setDisabled(false);
-        float val2 = getRand(0, 160); // Screening result.
+        float val2 = getRand(0, 160); // Screening result (electrical impedance).
         if (val2 < 100) { // Report result to user.
             ui->report->setText("The reported ΔLt value is : " + QString::number(val2) + "." + QString::number((getRand(0, 100) / 10)) + "  -- PASSED");
         } else {
