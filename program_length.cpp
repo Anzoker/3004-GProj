@@ -12,11 +12,9 @@ program_length::program_length(QWidget *parent) :
     ui->t4->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 }
 
-program_length::~program_length()
-{
-    delete ui;
-}
+program_length::~program_length() { delete ui; }
 
+// Buttons for choosing the duration of the program (1, 10, 30, or 60 minutes).
 void program_length::on_t1_clicked()
 {
     emit valueChanged(1);
