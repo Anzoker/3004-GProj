@@ -154,7 +154,7 @@ void Screening::on_screen_clicked() {
     if (answer == 1) { // Sensors placed properly -> begin screening.
         scrn_test();
     } else {
-        ui->report->setText("The device sensors were not place properly.  -- ERROR");
+        ui->report->setText("The device sensors were not placed properly.");
         ui->report->show();
         ui->screen->setDisabled(true);
         this->exec();
