@@ -1,6 +1,14 @@
-# 3004-GProj
-Group Project for 3004
+Group Project for COMP 3004-A
 
-Document how to compile the application?
+Date:
+April 4, 2020
 
-Document how to navigate through the application?
+Group members:
+Annibale Canaj
+Dominik Janelle
+Logan Brazeau
+
+Issues/limitations:
+You may need to configure the project before building it.
+Occasionally a low battery warning will appear when it should not.
+The "settings" button is a placeholder.
