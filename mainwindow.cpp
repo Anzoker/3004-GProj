@@ -10,7 +10,6 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
-
     // UI setup.
 
     this->setFixedSize(800, 400); // Window.
@@ -22,6 +21,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->default_2->setTitle("");
     ui->static_2->setFlat(true);
     ui->static_2->setTitle("");
+    // Size of buttons.
     ui->settings->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     ui->frequency->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     ui->screening->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
@@ -167,16 +167,6 @@ void MainWindow::on_screening_clicked() {
     timer->stop();
     screen->show();
 
-}
-
-// Button for "settings".
-void MainWindow::on_settings_clicked() {
-    hide();
-    sett = new Settings(this);
-    sett->setBattery(battery, battery_cntr);
-    sett->setPwr(pwr_usage);
-    timer->stop();
-    sett->show();
 }
 
 /*///////////////////////////////////////////////////////
