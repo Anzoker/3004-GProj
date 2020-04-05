@@ -210,7 +210,7 @@
         </font>
        </property>
        <property name="text">
-        <string>Frequency Menu</string>
+        <string>  Frequency</string>
        </property>
       </widget>
       <widget class="QPushButton" name="return_2">
