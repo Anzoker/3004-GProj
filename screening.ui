@@ -210,7 +210,7 @@
         </font>
        </property>
        <property name="text">
-        <string>Screening Menu</string>
+        <string>Screening</string>
        </property>
       </widget>
       <widget class="QPushButton" name="return_2">
