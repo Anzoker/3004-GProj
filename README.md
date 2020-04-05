@@ -4,13 +4,21 @@ Date:
 
 April 4, 2020
 
+.
+
 Group members:
 
 Annibale Canaj
+
 Dominik Janelle
+
 Logan Brazeau
 
+.
 
+.
+
+.
 
 Issues/limitations:
 
