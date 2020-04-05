@@ -202,7 +202,7 @@ void Program::handler(int s) {
         program_test();
     } else {
         disable_prog();
-        ui->report->setText("The device sensors were not place properly.  -- ERROR");
+        ui->report->setText("The device sensors were not placed properly.  -- ERROR");
         ui->report->show();
         this->exec();
     }
