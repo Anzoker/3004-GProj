@@ -1,5 +1,7 @@
 Group Project for COMP 3004-A
 
+
+
 Date:
 
 April 4, 2020
@@ -13,10 +15,6 @@ Annibale Canaj
 Dominik Janelle
 
 Logan Brazeau
-
-.
-
-.
 
 .
 
