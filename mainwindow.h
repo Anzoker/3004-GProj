@@ -4,7 +4,6 @@
 #include <QMainWindow>
 #include <QTimer>
 #include "frequency.h"
-#include "settings.h"
 #include "screening.h"
 #include "program.h"
 
@@ -38,11 +37,9 @@ private slots:
     void on_program_clicked();
     void on_frequency_clicked();
     void on_screening_clicked();
-    void on_settings_clicked();
 
 private:
     Ui::MainWindow *ui;
-    Settings *sett;
     Program  *prog;
     Frequency *freq;
     Screening *screen;
