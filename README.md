@@ -4,9 +4,7 @@ Date:
 
 April 4, 2020
 
-Group members:
-
-Annibale Canaj
+Group members: \n Annibale Canaj
 
 Dominik Janelle
 
