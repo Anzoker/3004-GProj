@@ -24,7 +24,6 @@ SOURCES += \
     program_length.cpp \
     screening.cpp \
     screening_confirm.cpp \
-    settings.cpp
 
 HEADERS += \
     frequency.h \
@@ -34,7 +33,6 @@ HEADERS += \
     program_length.h \
     screening.h \
     screening_confirm.h \
-    settings.h
 
 FORMS += \
     frequency.ui \
@@ -44,7 +42,6 @@ FORMS += \
     program_length.ui \
     screening.ui \
     screening_confirm.ui \
-    settings.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
